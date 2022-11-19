@@ -342,6 +342,7 @@ footer h3, .nav-img.leaftech {
 }
 .footer-two-cols {
   padding: 1.9rem 4.4rem;
+  padding-right: 5.9rem;
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -378,6 +379,9 @@ footer h3, .nav-img.leaftech {
 Copyright
 ============================
 */
+#col31{
+  display: none;
+}
 .copyright-item {
   margin-bottom: 0.5rem;
 }
@@ -426,19 +430,16 @@ Copyright
   #col2 p,#col3 p,#col4 p, #col5 p{
     font-size: 1.3vw;
   }
-  #col1, #co5-col-1{
+  #col1{
     flex-grow: 4.7;
   }
   #col2{
     flex-grow: 10.1;
   }
-  #co5-col-2{
-    flex-grow: 6;
-  }
-  #col3, #co5-col-3{
+  #col3{
     flex-grow: 1.8;
   }
-  #col4, #co5-col-4{
+  #col4{
     flex-grow: 2.5;
   }
   
@@ -461,13 +462,6 @@ Copyright
   .footer-img {
     transform: translate(0, -34%);
   }
-  .copyright-five-cols {
-    display: flex;
-    justify-content: space-between;
-  }
-  .copyright-item {
-    margin-left: 1rem;
-  }
   .copyright-img,
   .copyright-home, #co5-col-1 {
     opacity: 0;
@@ -475,6 +469,12 @@ Copyright
   .copyright p{
     font-size: 1vw;
   }
+#co5-col-3, #co5-col-4, #co5-col-5{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+  
 }
 @media screen and (min-width: 768px) {
   .services {
@@ -508,6 +508,18 @@ Copyright
   }
   .footer-five-cols {
     padding: 3rem 12.8rem;
+    padding-right: 18.4vw;
+    padding-left: 12.5vw;
+  }
+  .leaftech-text{
+    font-size: 2rem;
+  }
+  #col2 h3,#col3 h3,#col4 h3, #col5 h3,
+  #col2 p,#col3 p,#col4 p, #col5 p{
+    font-size: 1rem;
+  }
+  .copyright p{
+    font-size: 0.8rem;
   }
   .copyright-five-cols {
     display: flex;
@@ -541,14 +553,47 @@ Copyright
   .footer-two-cols {
     display: none;
   }
+  .footer-five-cols {
+    padding-right: 21.8vw;
+    padding-left: 18.6vw;
+  }
   .copyright-five-cols {
     display: flex;
     justify-content: space-between;
-    text-align: left;
-    padding: 3rem 16.6rem 3rem 12rem;
+    padding: 3rem 25.4vw 3rem 39vw;
   }
   .copyright-img,
   .copyright-home {
     display: none;
   }
+   .copyright-five-cols {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .copyright-item { 
+    margin-left: 1rem;
+  }
+  #co5-col-1, #co5-col-2{
+    display: none;
+  }
+  #co5-col-3, #co5-col-4, #co5-col-5{
+    position: static;
+  }
+  #col1{
+    flex-grow: 12;
+  }
+  #col2{
+    flex-grow: 16.4;
+  }
+  #col3{
+    flex-grow: 8;
+  }
+  #col31{
+    display: block;
+    flex-grow: 15.3;
+  }
+  #col4{
+    display: none;
+  }
+
 }

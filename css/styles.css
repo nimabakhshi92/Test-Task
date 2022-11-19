@@ -69,12 +69,25 @@ h3 {
   font-weight: bold;
 }
 .center1 {
-  padding-right: 1.8rem;
+  padding-right: 2.2rem;
   padding-left: 1.8rem;
 }
 .center2 {
   padding-right: 1.8rem;
   padding-left: 1.8rem;
+}
+.leaftech-text{
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  color: #4788d8;
+}
+@media screen and (min-width: 480px) {
+  .center1 {
+    padding-right: 1.58rem;
+    padding-left: 1.7rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .center1 {
@@ -142,6 +155,9 @@ footer p {
     width: 48rem;
     height: auto;
   }
+  .banner-info {
+    margin-bottom: 4.4rem;
+  }
 }
 
 /* ///////////////////////////////// */
@@ -160,6 +176,7 @@ Header
  */
 header {
   background-color: var(--clr-primary-light);
+  min-width: 38rem;
 }
 .navbar {
   display: flex;
@@ -225,9 +242,14 @@ header {
 @media screen and (min-width: 480px) {
   .navbar {
     padding-top: 4.9rem;
+  margin-bottom: 11.2rem;
+
   }
 }
 @media screen and (min-width: 768px) {
+  .navbar {
+  margin-bottom: 11.7rem;
+  }
   .banner {
     display: flex;
     padding-right: 4.8rem;
@@ -236,7 +258,10 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
-  .banner {
+  .navbar {
+    margin-bottom: 10.4rem;
+    }
+    .banner {
     display: flex;
     justify-content: space-between;
     padding-right: 20rem;
@@ -367,17 +392,20 @@ Copyright
 }
 @media screen and (min-width: 480px) {
   .services {
-    margin-top: 24rem;
+    margin-top: 2.4rem;
   }
   .services-center {
     margin-top: 2.2rem;
   }
   .service-info {
-    padding-left: 3rem;
+    padding-left: 0rem;
+  }
+  .services-img{
+    width: 28.6rem;
   }
   .center2 {
-    padding-right: 14.4rem;
-    padding-left: 14.4rem;
+    padding-right: 18.75vw;
+    padding-left: 18.75vw;
   }
   .footer-two-cols {
     display: none;
@@ -386,14 +414,45 @@ Copyright
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 3rem 10.6rem 3rem 7.9rem;
+    padding: 3rem 13.8vw 3rem 10.2vw;
     box-shadow: 0 1px 2px 0 #778aa3;
   }
+  .leaftech-text{
+    display: block;
+    margin-top: -1vw;
+    font-size: 2.6vw;
+  }
+  #col2 h3,#col3 h3,#col4 h3, #col5 h3,
+  #col2 p,#col3 p,#col4 p, #col5 p{
+    font-size: 1.3vw;
+  }
+  #col1, #co5-col-1{
+    flex-grow: 4.7;
+  }
+  #col2{
+    flex-grow: 10.1;
+  }
+  #co5-col-2{
+    flex-grow: 6;
+  }
+  #col3, #co5-col-3{
+    flex-grow: 1.8;
+  }
+  #col4, #co5-col-4{
+    flex-grow: 2.5;
+  }
+  
   .copyright-five-cols {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 3rem 6.6rem 3rem 7.9rem;
+    padding: 3rem 8vw 3rem 10.2vw;
+  }
+  .copyright-five-cols .copyright-img{
+    font-size: 2.6vw;
+  }
+  .copyright-five-cols .copyright-home{
+    font-size: 1.3vw;
   }
   .footer-folow-us,
   .footer-services {
@@ -410,13 +469,16 @@ Copyright
     margin-left: 1rem;
   }
   .copyright-img,
-  .copyright-home {
+  .copyright-home, #co5-col-1 {
     opacity: 0;
+  }
+  .copyright p{
+    font-size: 1vw;
   }
 }
 @media screen and (min-width: 768px) {
   .services {
-    margin-top: 10rem;
+    margin-top: 7.2rem;
   }
   img.service {
     width: 28.6rem;
@@ -426,9 +488,16 @@ Copyright
     display: flex;
     justify-content: space-between;
   }
+  .service-info {
+    padding-left: 3rem;
+  }
   .center2 {
-    padding-right: 12.8rem;
-    padding-left: 12.8rem;
+    padding-right: 18.75vw;
+    padding-left: 18.75vw;
+  }
+  .center2 {
+    padding-right: 12.5vw;
+    padding-left: 12.5vw;
     text-align: left;
   }
   .content-devider {
@@ -456,9 +525,15 @@ Copyright
     margin-top: 6.4rem;
     display: flex;
   }
+  .service-info {
+    padding-left: 10.8rem;
+  }
+  .services-img{
+    width: 36.4rem;
+  }
   .center2 {
-    padding-right: 26rem;
-    padding-left: 22rem;
+    padding-right: 15.7vw;
+    padding-left: 18.7vw;
   }
   .content-devider {
     margin-top: 7.9rem;
